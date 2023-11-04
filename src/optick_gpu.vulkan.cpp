@@ -24,6 +24,9 @@
 
 #if USE_OPTICK
 #if OPTICK_ENABLE_GPU_VULKAN
+#ifdef VKAPI_PTR
+#undef VKAPI_PTR
+#endif
 #include <vulkan/vulkan.h>
 
 #include "optick_core.h"
